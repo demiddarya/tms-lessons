@@ -6,7 +6,7 @@ n = int(input())
 
 
 def generate_natural_cubes(n) -> list:
-    a: list = [i ** 2 for i in range(1, n+1)]
+    a: list = [i ** 3 for i in range(1, n+1)]
     return a
 
 
