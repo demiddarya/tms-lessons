@@ -1,12 +1,9 @@
-my_list = list(map(str, input().split()))
-sep = input()
-
-
-def my_join(my_list, sep):
-    sep_list = sep.join(my_list)
-    from functools import reduce
-    result = reduce(lambda i, r: i + r, sep_list)
-    return result
-
-
-print(my_join(my_list, sep))
+from functools import reduce
+user = input().split()
+s = input()
+def my_join():
+    for i in user:
+        return [(i + s) for i in user]
+agard= reduce(lambda x,y: x+y , my_join())
+agard = agard[:-1]
+print(agard)
