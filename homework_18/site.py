@@ -87,7 +87,7 @@ def view_article(article_id: int):
             <p>{article.text}</p>
             <p>Like count: {article.like_count}</p>
             <form method="post" action="/article/like">
-                <input type="hidden" name="article_id value="{article_id}"/>
+                <input type="hidden" name="article_id" value="{article_id}"/>
                 <input type="submit" value="Like"/>
             </form>
         </body>
